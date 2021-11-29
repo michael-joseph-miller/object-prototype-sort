@@ -1,7 +1,7 @@
 {
-  "name": "object-prototype-sort",
+  "name": "object-to-sorted-array",
   "version": "1.0.0",
-  "description": "Adds sort method to Object.prototype",
+  "description": "Sort object by key or value",
   "author": "Michael Joseph Miller",
   "private": false,
   "license": "MIT",
@@ -16,10 +16,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/michael-joseph-miller/object-prototype-sort.git"
+    "url": "git+https://github.com/michael-joseph-miller/object-to-sorted-array.git"
   },
   "bugs": {
-    "url": "https://github.com/michael-joseph-miller/object-prototype-sort/issues"
+    "url": "https://github.com/michael-joseph-miller/object-to-sorted-array/issues"
   },
   "devDependencies": {
     "parcel": "^2.0.1"

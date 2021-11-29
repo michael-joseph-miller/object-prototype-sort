@@ -4,8 +4,7 @@
  * @param {string} [sortBy=key] - "key"|"value"
  * @param {string} [order=ascending] - "ascending"|"descending"
  */
-export const sort = function (sortBy = 'key', order = 'ascending') {
-  let obj = { ...this };
+export const sort = function (obj, sortBy = 'key', order = 'ascending') {
   let index = 1;
 
   const sortArray = Object.entries(obj);
@@ -26,5 +25,5 @@ export const sort = function (sortBy = 'key', order = 'ascending') {
     });
   }
 
-  return Object.fromEntries(sortArray);
+  return sortArray;
 };

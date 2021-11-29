@@ -1,6 +1,6 @@
 # object-prototype-sort<!-- omit in toc -->
 
-Adds sort method to Object.prototype<!-- omit in toc -->
+Sort an object by key or value<!-- omit in toc -->
 
 [Report Bug][bug] | [Request Features][features]
 
@@ -8,53 +8,67 @@ Adds sort method to Object.prototype<!-- omit in toc -->
 
 ## Table of Contents<!-- omit in toc -->
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Args](#args)
+- [Install](#install)
+- [Import](#import)
+- [Syntax](#syntax)
+- [Parameters](#parameters)
+- [Return value](#return-value)
 - [License](#license)
 - [Contact](#contact)
 
 ---
 
-## Installation
+## Install
 
 ```sh
-npm i object-prototype-sort
+npm i object-to-sorted-array
 ```
 
-## Usage
-
-1. Import the component you would like to use into the appropriate file.
-
-   ```js
-   require('object-prototype-sort');
-   ```
-
-   ### OR
-
-   ```js
-   import 'object-prototype-sort';
-   ```
-
-2. Use that component in your react code.
-   ```js
-   myObj = myObj.sort(); // sort by deafult: "key" "ascending"
-   ```
-
-### Args
+## Import
 
 ```js
-myObj.sort(sortBy, order);
-
-sortBy = 'key' | 'value'; // default: "key"
-order = 'ascending' | 'descending'; // default: "ascending"
+import sortObj from 'object-to-sorted-array';
 ```
+
+## Syntax
+
+```js
+sortObj(object);
+
+sortObj(object[, sortBy])
+
+sortObj(object[, sortBy[, sortOrder]])
+```
+
+## Parameters
+
+- **object**
+
+  - object to de sorted
+
+- **sortBy** `(optional)`
+
+  - "key" | "value"
+  - sort by the objects keys or values
+
+- **order** `(optional)`
+  - "ascending" | "descending"
+  - sort in ascending or descending order
+
+## Return value
+
+- Returns an array of sorted key/value pair arrays
+  - `[['key', 'value'], ...]`
+
+---
 
 <!-- LICENSE -->
 
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
+
+---
 
 <!-- CONTACT -->
 
@@ -64,6 +78,5 @@ Project Link: <https://github.com/michael-joseph-miller/object-prototype-sort>
 
 <!-- LINKS & IMAGES -->
 
-[bug]: https://github.com/michael-joseph-miller/object-prototype-sort/issues
-[features]: https://github.com/michael-joseph-miller/object-prototype-sort/issues
-[react]: https://reactjs.org
+[bug]: https://github.com/michael-joseph-miller/object-to-sorted-array/issues
+[features]: https://github.com/michael-joseph-miller/object-to-sorted-array/issues
